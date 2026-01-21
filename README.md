@@ -1,0 +1,2 @@
+# smart-agri-emdedded
+# Smart Agri Embedded AI 🌿  Système de monitoring agricole distribué.  ### Matériel - **Raspberry Pi 4** : Gateway MQTT + Contrôle Relais + Sonde NPK. - **Tinker Board 2** : Vision par ordinateur (Détection de maladies). - **Arduino Nano 33 BLE** : Capteur d'environnement TinyML.  ### Installation Rapide 1. Installer `mosquitto` sur le RPi : `sudo apt install mosquitto` 2. Déployer `rpi-gateway/main.py` 3. Déployer `tinker-vision/inference.py` avec vos modèles TFLite.
