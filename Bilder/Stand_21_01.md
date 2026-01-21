@@ -45,7 +45,7 @@ Solutions appliquées :
 
 Ajout de # -*- coding: utf-8 -*- en tête
 
-Resauvegarde du fichier en UTF-8
+Resauvegarde du fichier en UTF-8g
 
 Éviter les caractères accentués dans les logs / messages
 
