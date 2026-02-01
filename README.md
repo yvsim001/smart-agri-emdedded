@@ -6,7 +6,8 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 
 ## 📸 Galerie & Démonstrations
 
-![MQTT Explorer | Platen_Dectec](./Bilder/image.png)
+!![MQTT Explorer | Platen_Dectec](./Bilder/image.png)
+<img src="./Bilder/image.png" width="500">
 ![MQTT Explorer | Moisture](./Bilder/test.png)
 ![Tinker-Vision | Plante_Dectec1](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34%20(1).jpeg)
 ![Tinker-Vision | Plante_Dectec2](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34.jpeg)
