@@ -6,20 +6,33 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 
 ## 📸 Galerie & Démonstrations
 
-!![MQTT Explorer | Platen_Dectec](./Bilder/image.png)
-<img src="./Bilder/image.png" width="500">
-![MQTT Explorer | Moisture](./Bilder/test.png)
-![Tinker-Vision | Plante_Dectec1](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34%20(1).jpeg)
-![Tinker-Vision | Plante_Dectec2](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34.jpeg)
+### 🖥️ Monitoring & Logs (MQTT)
+*Suivi des flux de données en temps réel via MQTT Explorer.*
 
-### 📺 Vidéo de Démonstration
+|          MQTT Explorer - Détection         |          MQTT Explorer - Humidité         |
+| :----------------------------------------: | :---------------------------------------: |
+| <img src="./Bilder/image.png" width="400"> | <img src="./Bilder/test.png" width="400"> |
+| *Statut des topics globaux*                | *Logs de la sonde d'humidité*             |
 
+### 👁️ Inférence Vision IA (Tinker Board)
+*Résultats de la détection de santé des plantes par l'IA.*
+
+| Analyse Vision 1 | Analyse Vision 2 |
+| :----------------------------------------------------------------------------: | :---: |
+| ![Vision 1](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34%20(1).jpeg) | ![Vision 2](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34.jpeg) |
+
+---
+
+### 📺 Vidéos de Démonstration
+
+#### 1️⃣ Activation des Relais (Contrôle MQTT)
 <video src="./Bilder/MAH03529.MP4" controls width="100%"></video>
-<video src="./Bilder/PXL_20260201_130745520.LS.mp4" controls width="100%"></video>
-<video src="./Bilder/PXL_20260201_130806733.LS.mp4" controls width="100%"></video>
 
-> [!TIP]
-> **[Cliquez ici pour voir la vidéo de démonstration du système (MP4)](Bilder/MAH03529.MP4)** > *La vidéo montre l'activation des relais via les commandes MQTT.*
+#### 2️⃣ Test de fonctionnement du système
+<video src="./Bilder/PXL_20260201_130745520.LS.mp4" controls width="100%"></video>
+
+#### 3️⃣ Overview de l'installation
+<video src="./Bilder/PXL_20260201_130806733.LS.mp4" controls width="100%"></video>
 
 ### 🖼️ Photos du Projet
 
