@@ -26,13 +26,13 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 ### 📺 Vidéos de Démonstration
 
 ## 1️⃣ Activation des Relais (Contrôle MQTT)
-[![Activation MQTT](./Bilder/preview_mqtt.png)](./Bilder/MAH03529.MP4)
+[![Activation MQTT](./Bilder/preview_mqtt.gif)](./Bilder/MAH03529.MP4)
 
 ## 2️⃣ Test de fonctionnement du système
-[![Test système](./Bilder/preview_test.png)](./Bilder/PXL_20260201_130745520.LS.mp4)
+[![Test système](./Bilder/preview_test.gif)](./Bilder/PXL_20260201_130745520.LS.mp4)
 
 ## 3️⃣ Overview de l'installation
-[![Overview installation](./Bilder/preview_overview.png)](./Bilder/PXL_20260201_130806733.LS.mp4)
+[![Overview installation](./Bilder/preview_overview.gif)](./Bilder/PXL_20260201_130806733.LS.mp4)
 
 
 ### 🖼️ Photos du Projet
