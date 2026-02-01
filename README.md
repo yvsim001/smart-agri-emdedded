@@ -6,9 +6,16 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 
 ## 📸 Galerie & Démonstrations
 
-*Les fichiers visuels suivants sont situés dans le dossier `./Bilder/`.*
+![MQTT Explorer | Platen_Dectec](./Bilder/image.png)
+![MQTT Explorer | Moisture](./Bilder/test.png)
+![Tinker-Vision | Plante_Dectec1](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34%20(1).jpeg)
+![Tinker-Vision | Plante_Dectec2](./Bilder/WhatsApp%20Image%202026-01-21%20at%2017.36.34.jpeg)
 
 ### 📺 Vidéo de Démonstration
+
+<video src="./Bilder/MAH03529.MP4" controls width="100%"></video>
+<video src="./Bilder/PXL_20260201_130745520.LS.mp4" controls width="100%"></video>
+<video src="./Bilder/PXL_20260201_130806733.LS.mp4" controls width="100%"></video>
 
 > [!TIP]
 > **[Cliquez ici pour voir la vidéo de démonstration du système (MP4)](Bilder/MAH03529.MP4)** > *La vidéo montre l'activation des relais via les commandes MQTT.*
@@ -17,7 +24,6 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 
 |            Configuration Hardware       |            Dashboard Mobile            |
 | --------------------------------------- | -------------------------------------- |
-|                                         |                                        |
 | *Raspberry Pi + Tinker Board + Arduino* | *Interface de contrôle IoT MQTT Panel* |
 
 ---
