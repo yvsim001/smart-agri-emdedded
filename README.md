@@ -32,3 +32,15 @@ smart-agri-embedded/
 └── nano-sensor/           # LE SCOUT (Arduino Nano 33 BLE)
     ├── sensor_node.ino    # Code Arduino (TinyML + BLE/Serial)
     └── config.h           # Seuils et paramètres de capteurs
+
+🔧 ÉTAPE 3 — Activer l’environnement
+''''bash
+source agri_env/bin/activate
+''''
+
+Tu verras maintenant :
+
+(agri_env) i@yvsim001:~ $
+
+
+👉 À partir de là, pip est autorisé.
