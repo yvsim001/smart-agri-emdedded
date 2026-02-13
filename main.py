@@ -1,9 +1,11 @@
-# -*- coding: utf-8 -*-
+
 import paho.mqtt.client as mqtt
 from gpiozero import OutputDevice
+from datetime import datetime
 import minimalmodbus
 import serial
 import time
+
 
 # ==============================
 # CONFIGURATION HARDWARE
@@ -14,8 +16,8 @@ LUMIERE = OutputDevice(27, active_high=False, initial_value=False)
 
 # Sonde RS485 (Via adaptateur USB JZK)
 try:
-    sensor = minimalmodbus.Instrument('/dev/ttyUSB0', 1) # Adresse esclave 1
-    sensor.serial.baudrate = 9600
+    sensor = minimalmodbus.Instrument('/dev/ttyUSB1', 1) # Adresse esclave 1
+    sensor.serial.baudrate = 4800
     sensor.serial.timeout = 1
     print("RS485 : Adaptateur USB detecte")
 except Exception as e:
@@ -63,24 +65,37 @@ try:
     print("Demarrage du systeme complet...")
     client.connect(MQTT_BROKER, 1883, 60)
     
-    # On lance la boucle MQTT en arrière-plan (non-bloquante)
+    # On lance la boucle MQTT en arrirre-plan (non-bloquante)
     client.loop_start()
 
     while True:
         try:
-            # LECTURE DES REGISTRES MODBUS (Adresses standards des sondes NPK/pH)
-            # Registre 0: Humidite, 1: Temp, 2: EC, 3: pH
+            # =========================
+            # GESTION LUMIERE 12H/JOUR
+            # =========================
+            heure_actuelle = datetime.now().hour
+
+            if 8 <= heure_actuelle < 20:   # 8h ? 20h
+                LUMIERE.on()
+            else:
+                LUMIERE.off()
+
+            # =========================
+            # LECTURE MODBUS
+            # =========================
             val_humidite = sensor.read_register(0, 1) / 10.0
             val_temp     = sensor.read_register(1, 1) / 10.0
             val_ph       = sensor.read_register(3, 1) / 10.0
             
             print(f"[CAPTEUR] Hum: {val_humidite}% | Temp: {val_temp}C | pH: {val_ph}")
 
-            # Publication des données sur MQTT pour archivage ou dashboard
+            # Publication MQTT
             client.publish(TOPIC_MOISTURE, str(val_humidite))
 
-            # SECURITE LOCALE : Si humidite < 25%, on arrose peu importe l'IA
-            if val_humidite < 25.0:
+            # =========================
+            # SECURITE ARROSAGE
+            # =========================
+            if val_humidite < 5.0:
                 print("Alerte : Sol tres sec ! Arrosage de securite...")
                 POMPE.on()
                 time.sleep(5)
@@ -89,7 +104,7 @@ try:
         except Exception as e:
             print(f"RS485 : Erreur de lecture -> {e}")
 
-        time.sleep(10) # Attendre 10 secondes avant la prochaine lecture
+        time.sleep(10)
 
 except KeyboardInterrupt:
     print("Arret du systeme")
