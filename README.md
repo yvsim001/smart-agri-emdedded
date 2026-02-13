@@ -11,7 +11,7 @@ Système distribué de monitoring et d'automatisation agricole utilisant l'IA em
 
 |          MQTT Explorer - Détection         |          MQTT Explorer - Humidité         |
 | :----------------------------------------: | :---------------------------------------: |
-| <img src="./Bilder/image.png" width="400"> | <img src="./Bilder/test.png" width="400"> |
+| <img src="./Bilder/image.png" width="550"> | <img src="./Bilder/test.png" width="550"> |
 | *Statut des topics globaux*                | *Logs de la sonde d'humidité*             |
 
 ### 👁️ Inférence Vision IA (Tinker Board)
